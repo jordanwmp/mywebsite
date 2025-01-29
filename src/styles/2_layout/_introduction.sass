@@ -1,0 +1,40 @@
+@use '../1_base/responsive'
+
+.introduction
+    height: 100vh
+    background: rgb(238,174,202)
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%)
+    display: flex
+    justify-content: center
+    align-items: center
+
+    &__content
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+    &__image
+        max-width: 160px
+        border-radius: 50%
+
+    &__title, &__subtitle
+        color: #f9f9f9
+        text-align: center
+        font-weight: 500
+
+    &__title
+        margin-bottom: 0
+        font-size: 2.5em
+        
+        @include responsive.responsive(sm)
+            font-size: 2em
+
+
+    &__subtitle
+        margin: 0
+        font-size: 1.4em
+        margin-top: 10px
+
+        @include responsive.responsive(sm)
+            font-size: 1.2em

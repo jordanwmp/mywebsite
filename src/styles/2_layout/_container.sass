@@ -1,0 +1,22 @@
+@use '../1_base/responsive'
+
+.container
+    display: flex
+    flex-direction: column
+
+    @include responsive.responsive(sm)
+        flex-direction: row
+        max-height: 100vh
+
+        .introduction, .information
+            flex: 1
+        .information
+            overflow-y: scroll
+            /* Estilo para ocultar a barra de rolagem */
+            // height: 100%
+            // overflow-y: scroll
+            scrollbar-width: none
+            -ms-overflow-style: none
+
+            &::-webkit-scrollbar
+                display: none

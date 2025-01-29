@@ -1,0 +1,44 @@
+@use '../1_base/variables'
+@use '../3_module/flag-mixin'
+
+.header
+  margin: 0
+  padding: 0
+  position: fixed
+  width: 100%
+
+  &__nav
+    background: variables.$gray
+    padding: 8px 0
+    width: 100%
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    padding-right: 10px
+
+  &__language-list
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: 1em
+    margin: 0
+    padding: 0
+
+    &__item
+      display: flex
+      align-items: center
+      justify-content: center
+
+      &__button
+        width: 30px
+        height: 30px
+        border: none
+
+        &--pt
+          @include flag-mixin.flag-btn('br.svg')
+
+        &--en
+          @include flag-mixin.flag-btn('us.svg')
+
+        &--ru
+          @include flag-mixin.flag-btn('ru.svg')

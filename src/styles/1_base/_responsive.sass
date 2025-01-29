@@ -1,0 +1,18 @@
+@use 'variables'
+
+@mixin responsive($breakpoint)
+    @if $breakpoint == xl
+        @media (min-width: variables.$breakpoint-xl)
+            @content
+    @else if ($breakpoint == lg)
+        @media (min-width: variables.$breakpoint-lg)
+            @content
+    @else if ($breakpoint == md)
+        @media (min-width: variables.$breakpoint-md)
+            @content
+    @else if ($breakpoint == sm)
+        @media (min-width: variables.$breakpoint-sm)
+            @content
+    @else if ($breakpoint == xs)
+        @media (min-width: variables.$breakpoint-xs)
+            @content

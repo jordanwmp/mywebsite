@@ -1,0 +1,42 @@
+@use 'variables'
+@use 'responsive'
+
+*  
+    box-sizing: border-box
+
+body 
+    margin: 0
+    padding: 0
+    font-family: 'Hind', sans-serif
+    color: #3d3d50
+    font-size: 14px
+    line-height: 1.8em
+    text-align: justify
+
+    h2 
+        font-size: 1.5em
+        color: variables.$title-color
+
+ul 
+    list-style: none
+    padding-left: 0
+a
+    text-decoration: none
+
+p
+    font-size: 1em
+    color: variables.$text-color
+
+    @include responsive.responsive(sm)
+        font-size: 1em
+
+section 
+    padding: 30px 20px
+    
+    @include responsive.responsive(sm)
+        padding: 50px
+
+section.skills, 
+section.experience,
+section.contact 
+    background: #f8f8f8
