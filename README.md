@@ -51,4 +51,4 @@ Thank you for visiting my website! If you have any questions or would like to kn
 
 **Jordan Willian**  
 [Visit my website here](https://jordanwmp.github.io/)  
-[E-mail](mailto:jordanwillian.ecp@gmail.com)
+[Contact me by email here](mailto:jordanwillian.ecp@gmail.com)
