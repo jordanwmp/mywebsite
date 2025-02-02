@@ -60,7 +60,7 @@ const createItem = (smallText, h3Text, h4Text, pText) => {
     small.innerText = smallText;
 
     const h3 = document.createElement('h3');
-    h3.classList.add('education__institution');
+    h3.classList.add('education__degree');
     h3.innerText = h3Text;
 
     const h4 = document.createElement('h4');

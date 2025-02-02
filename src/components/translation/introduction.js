@@ -9,11 +9,11 @@ const translateInfo = (lang) =>{
 
     switch(lang){
         case 'en':
-            info.subtitle = "Bachelor's Degree in Science and Technology and<br> Computer Engineering"
+            info.subtitle = "Bachelor's in Science and Technology <br> and Computer Engineering"
             break
         case 'ru':
             info.title = "Джордан Уильян"
-            info.subtitle = "Степень бакалавра в области науки и технологий и<br> компьютерной инженерии"
+            info.subtitle = "Бакалавр науки и технологий <br> и компьютерной инженерии"
     }
 
     title.innerHTML = info.title
